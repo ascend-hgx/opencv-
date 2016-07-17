@@ -16,3 +16,4 @@
   opencv_createsamples -info pos.dat -vec pos.vec -bg neg.dat -num 46 -w 64 -h 64
 5. //训练文件
   opencv_traincascade -data dt -vec pos.vec -bg neg.dat -numPos 30 -numNeg 60 -numStages 16 -w 64 -h 64 -mode ALL
+至此，经过漫长的等待就能得到训练的xml数据，cascade.xml
